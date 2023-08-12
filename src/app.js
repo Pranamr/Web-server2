@@ -79,7 +79,7 @@ geocode(geocodeURL,((data,error)=>{
         const longitude = data.features[0].geometry.coordinates[0]
 
         console.log(latitude)
-        console.log(longitude)
+        // console.log(longitude)
 
         forecast(weatherStackBaseUrl, latitude, longitude, ((data,error)=>{
             if(error){
